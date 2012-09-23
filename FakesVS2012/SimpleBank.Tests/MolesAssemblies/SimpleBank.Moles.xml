@@ -1,0 +1,336 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>SimpleBank.Moles</name>
+    </assembly>
+    <members>
+        <member name="T:SimpleBank.Domain.Moles.MAccount">
+            <summary>Mole type of <see cref="T:SimpleBank.Domain.Account"/>
+            .</summary>
+        </member>
+        <member name="M:SimpleBank.Domain.Moles.MAccount.#ctor">
+            <summary>Initializes a new mole</summary>
+        </member>
+        <member name="M:SimpleBank.Domain.Moles.MAccount.#ctor(SimpleBank.Domain.Account)">
+            <summary>Initializes a new mole for the given instance</summary>
+        </member>
+        <member name="M:SimpleBank.Domain.Moles.MAccount.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the moled type</summary>
+        </member>
+        <member name="M:SimpleBank.Domain.Moles.MAccount.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the moled type</summary>
+        </member>
+        <member name="P:SimpleBank.Domain.Moles.MAccount.AutorizeOverdraftGet">
+            <summary>Sets the mole of <see cref="P:SimpleBank.Domain.Account.AutorizeOverdraft"/>
+            </summary>
+        </member>
+        <member name="P:SimpleBank.Domain.Moles.MAccount.AutorizeOverdraftSetBoolean">
+            <summary>Sets the mole of <see cref="P:SimpleBank.Domain.Account.AutorizeOverdraft"/>
+            </summary>
+        </member>
+        <member name="P:SimpleBank.Domain.Moles.MAccount.BalanceGet">
+            <summary>Sets the mole of <see cref="P:SimpleBank.Domain.Account.Balance"/>
+            </summary>
+        </member>
+        <member name="P:SimpleBank.Domain.Moles.MAccount.BalanceSetDecimal">
+            <summary>Sets the mole of <see cref="P:SimpleBank.Domain.Account.Balance"/>
+            </summary>
+        </member>
+        <member name="P:SimpleBank.Domain.Moles.MAccount.Behavior">
+            <summary>Assigns the behavior for all methods of the moled type</summary>
+        </member>
+        <member name="P:SimpleBank.Domain.Moles.MAccount.Constructor">
+            <summary>Sets the mole of <see cref="M:SimpleBank.Domain.Account.#ctor"/>
+            </summary>
+        </member>
+        <member name="P:SimpleBank.Domain.Moles.MAccount.IdGet">
+            <summary>Sets the mole of <see cref="P:SimpleBank.Domain.Account.Id"/>
+            </summary>
+        </member>
+        <member name="P:SimpleBank.Domain.Moles.MAccount.IdSetInt32">
+            <summary>Sets the mole of <see cref="P:SimpleBank.Domain.Account.Id"/>
+            </summary>
+        </member>
+        <member name="P:SimpleBank.Domain.Moles.MAccount.OperationsGet">
+            <summary>Sets the mole of <see cref="P:SimpleBank.Domain.Account.Operations"/>
+            </summary>
+        </member>
+        <member name="P:SimpleBank.Domain.Moles.MAccount.OperationsSetIListOfOperation">
+            <summary>Sets the mole of <see cref="P:SimpleBank.Domain.Account.Operations"/>
+            </summary>
+        </member>
+        <member name="T:SimpleBank.Domain.Moles.MAccount.AllInstances">
+            <summary>Define moles for all instances members</summary>
+        </member>
+        <member name="P:SimpleBank.Domain.Moles.MAccount.AllInstances.AutorizeOverdraftGet">
+            <summary>Sets the mole of <see cref="P:SimpleBank.Domain.Account.AutorizeOverdraft"/>
+            </summary>
+        </member>
+        <member name="P:SimpleBank.Domain.Moles.MAccount.AllInstances.AutorizeOverdraftSetBoolean">
+            <summary>Sets the mole of <see cref="P:SimpleBank.Domain.Account.AutorizeOverdraft"/>
+            </summary>
+        </member>
+        <member name="P:SimpleBank.Domain.Moles.MAccount.AllInstances.BalanceGet">
+            <summary>Sets the mole of <see cref="P:SimpleBank.Domain.Account.Balance"/>
+            </summary>
+        </member>
+        <member name="P:SimpleBank.Domain.Moles.MAccount.AllInstances.BalanceSetDecimal">
+            <summary>Sets the mole of <see cref="P:SimpleBank.Domain.Account.Balance"/>
+            </summary>
+        </member>
+        <member name="P:SimpleBank.Domain.Moles.MAccount.AllInstances.IdGet">
+            <summary>Sets the mole of <see cref="P:SimpleBank.Domain.Account.Id"/>
+            </summary>
+        </member>
+        <member name="P:SimpleBank.Domain.Moles.MAccount.AllInstances.IdSetInt32">
+            <summary>Sets the mole of <see cref="P:SimpleBank.Domain.Account.Id"/>
+            </summary>
+        </member>
+        <member name="P:SimpleBank.Domain.Moles.MAccount.AllInstances.OperationsGet">
+            <summary>Sets the mole of <see cref="P:SimpleBank.Domain.Account.Operations"/>
+            </summary>
+        </member>
+        <member name="P:SimpleBank.Domain.Moles.MAccount.AllInstances.OperationsSetIListOfOperation">
+            <summary>Sets the mole of <see cref="P:SimpleBank.Domain.Account.Operations"/>
+            </summary>
+        </member>
+        <member name="T:SimpleBank.Moles.MAccountService">
+            <summary>Mole type of <see cref="T:SimpleBank.AccountService"/>
+            .</summary>
+        </member>
+        <member name="M:SimpleBank.Moles.MAccountService.#ctor">
+            <summary>Initializes a new mole</summary>
+        </member>
+        <member name="M:SimpleBank.Moles.MAccountService.#ctor(SimpleBank.AccountService)">
+            <summary>Initializes a new mole for the given instance</summary>
+        </member>
+        <member name="M:SimpleBank.Moles.MAccountService.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the moled type</summary>
+        </member>
+        <member name="M:SimpleBank.Moles.MAccountService.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the moled type</summary>
+        </member>
+        <member name="P:SimpleBank.Moles.MAccountService.Behavior">
+            <summary>Assigns the behavior for all methods of the moled type</summary>
+        </member>
+        <member name="P:SimpleBank.Moles.MAccountService.ComputeInterestAccountDoubleInt32">
+            <summary>Sets the mole of <see cref="M:SimpleBank.AccountService.ComputeInterest(SimpleBank.Domain.Account,System.Double,System.Int32)"/>
+            </summary>
+        </member>
+        <member name="P:SimpleBank.Moles.MAccountService.ConstructorIAccountRepositoryIOperationRepository">
+            <summary>Sets the mole of <see cref="M:SimpleBank.AccountService.#ctor(SimpleBank.Repository.IAccountRepository,SimpleBank.Repository.IOperationRepository)"/>
+            </summary>
+        </member>
+        <member name="P:SimpleBank.Moles.MAccountService.GetOperationsForAccountInt32">
+            <summary>Sets the mole of <see cref="M:SimpleBank.AccountService.GetOperationsForAccount(System.Int32)"/>
+            </summary>
+        </member>
+        <member name="P:SimpleBank.Moles.MAccountService.MakeTransferAccountAccountDecimal">
+            <summary>Sets the mole of <see cref="M:SimpleBank.AccountService.MakeTransfer(SimpleBank.Domain.Account,SimpleBank.Domain.Account,System.Decimal)"/>
+            </summary>
+        </member>
+        <member name="T:SimpleBank.Moles.MAccountService.AllInstances">
+            <summary>Define moles for all instances members</summary>
+        </member>
+        <member name="P:SimpleBank.Moles.MAccountService.AllInstances.ComputeInterestAccountDoubleInt32">
+            <summary>Sets the mole of <see cref="M:SimpleBank.AccountService.ComputeInterest(SimpleBank.Domain.Account,System.Double,System.Int32)"/>
+            </summary>
+        </member>
+        <member name="P:SimpleBank.Moles.MAccountService.AllInstances.GetOperationsForAccountInt32">
+            <summary>Sets the mole of <see cref="M:SimpleBank.AccountService.GetOperationsForAccount(System.Int32)"/>
+            </summary>
+        </member>
+        <member name="P:SimpleBank.Moles.MAccountService.AllInstances.MakeTransferAccountAccountDecimal">
+            <summary>Sets the mole of <see cref="M:SimpleBank.AccountService.MakeTransfer(SimpleBank.Domain.Account,SimpleBank.Domain.Account,System.Decimal)"/>
+            </summary>
+        </member>
+        <member name="T:SimpleBank.Domain.Moles.MOperation">
+            <summary>Mole type of <see cref="T:SimpleBank.Domain.Operation"/>
+            .</summary>
+        </member>
+        <member name="M:SimpleBank.Domain.Moles.MOperation.#ctor">
+            <summary>Initializes a new mole</summary>
+        </member>
+        <member name="M:SimpleBank.Domain.Moles.MOperation.#ctor(SimpleBank.Domain.Operation)">
+            <summary>Initializes a new mole for the given instance</summary>
+        </member>
+        <member name="M:SimpleBank.Domain.Moles.MOperation.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the moled type</summary>
+        </member>
+        <member name="M:SimpleBank.Domain.Moles.MOperation.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the moled type</summary>
+        </member>
+        <member name="P:SimpleBank.Domain.Moles.MOperation.AmountGet">
+            <summary>Sets the mole of <see cref="P:SimpleBank.Domain.Operation.Amount"/>
+            </summary>
+        </member>
+        <member name="P:SimpleBank.Domain.Moles.MOperation.AmountSetDecimal">
+            <summary>Sets the mole of <see cref="P:SimpleBank.Domain.Operation.Amount"/>
+            </summary>
+        </member>
+        <member name="P:SimpleBank.Domain.Moles.MOperation.Behavior">
+            <summary>Assigns the behavior for all methods of the moled type</summary>
+        </member>
+        <member name="P:SimpleBank.Domain.Moles.MOperation.Constructor">
+            <summary>Sets the mole of <see cref="M:SimpleBank.Domain.Operation.#ctor"/>
+            </summary>
+        </member>
+        <member name="P:SimpleBank.Domain.Moles.MOperation.DirectionGet">
+            <summary>Sets the mole of <see cref="P:SimpleBank.Domain.Operation.Direction"/>
+            </summary>
+        </member>
+        <member name="P:SimpleBank.Domain.Moles.MOperation.DirectionSetDirection">
+            <summary>Sets the mole of <see cref="P:SimpleBank.Domain.Operation.Direction"/>
+            </summary>
+        </member>
+        <member name="T:SimpleBank.Domain.Moles.MOperation.AllInstances">
+            <summary>Define moles for all instances members</summary>
+        </member>
+        <member name="P:SimpleBank.Domain.Moles.MOperation.AllInstances.AmountGet">
+            <summary>Sets the mole of <see cref="P:SimpleBank.Domain.Operation.Amount"/>
+            </summary>
+        </member>
+        <member name="P:SimpleBank.Domain.Moles.MOperation.AllInstances.AmountSetDecimal">
+            <summary>Sets the mole of <see cref="P:SimpleBank.Domain.Operation.Amount"/>
+            </summary>
+        </member>
+        <member name="P:SimpleBank.Domain.Moles.MOperation.AllInstances.DirectionGet">
+            <summary>Sets the mole of <see cref="P:SimpleBank.Domain.Operation.Direction"/>
+            </summary>
+        </member>
+        <member name="P:SimpleBank.Domain.Moles.MOperation.AllInstances.DirectionSetDirection">
+            <summary>Sets the mole of <see cref="P:SimpleBank.Domain.Operation.Direction"/>
+            </summary>
+        </member>
+        <member name="T:SimpleBank.Moles.MUtils">
+            <summary>Mole type of <see cref="T:SimpleBank.Utils"/>
+            .</summary>
+        </member>
+        <member name="M:SimpleBank.Moles.MUtils.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:SimpleBank.Moles.MUtils.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the moled type</summary>
+        </member>
+        <member name="M:SimpleBank.Moles.MUtils.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the moled type</summary>
+        </member>
+        <member name="P:SimpleBank.Moles.MUtils.Behavior">
+            <summary>Assigns the behavior for all methods of the moled type</summary>
+        </member>
+        <member name="P:SimpleBank.Moles.MUtils.Capitalize">
+            <summary>Sets the mole of <see cref="M:SimpleBank.Utils.Capitalize"/>
+            </summary>
+        </member>
+        <member name="P:SimpleBank.Moles.MUtils.FibonacciInt32">
+            <summary>Sets the mole of <see cref="M:SimpleBank.Utils.Fibonacci(System.Int32)"/>
+            </summary>
+        </member>
+        <member name="P:SimpleBank.Moles.MUtils.GetMessage">
+            <summary>Sets the mole of <see cref="M:SimpleBank.Utils.GetMessage"/>
+            </summary>
+        </member>
+        <member name="P:SimpleBank.Moles.MUtils.ReadFooValue">
+            <summary>Sets the mole of <see cref="M:SimpleBank.Utils.ReadFooValue"/>
+            </summary>
+        </member>
+        <member name="P:SimpleBank.Moles.MUtils.SomeDumbMethodInt32Int32">
+            <summary>Sets the mole of <see cref="M:SimpleBank.Utils.SomeDumbMethod(System.Int32,System.Int32)"/>
+            </summary>
+        </member>
+        <member name="T:SimpleBank.Domain.Moles.SAccount">
+            <summary>Stub type of <see cref="T:SimpleBank.Domain.Account"/>
+            .</summary>
+        </member>
+        <member name="M:SimpleBank.Domain.Moles.SAccount.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:SimpleBank.Domain.Moles.SAccount.InitializeStub">
+            <summary>Initializes a new instance of type SAccount</summary>
+        </member>
+        <member name="P:SimpleBank.Domain.Moles.SAccount.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:SimpleBank.Domain.Moles.SAccount.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="T:SimpleBank.Moles.SAccountService">
+            <summary>Stub type of <see cref="T:SimpleBank.AccountService"/>
+            .</summary>
+        </member>
+        <member name="M:SimpleBank.Moles.SAccountService.#ctor(SimpleBank.Repository.IAccountRepository,SimpleBank.Repository.IOperationRepository)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:SimpleBank.Moles.SAccountService.InitializeStub">
+            <summary>Initializes a new instance of type SAccountService</summary>
+        </member>
+        <member name="P:SimpleBank.Moles.SAccountService.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:SimpleBank.Moles.SAccountService.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="T:SimpleBank.Repository.Moles.SIAccountRepository">
+            <summary>Stub type of <see cref="T:SimpleBank.Repository.IAccountRepository"/>
+            .</summary>
+        </member>
+        <member name="M:SimpleBank.Repository.Moles.SIAccountRepository.#ctor">
+            <summary>Initializes a new instance of type SIAccountRepository</summary>
+        </member>
+        <member name="F:SimpleBank.Repository.Moles.SIAccountRepository.CreateAccountAccount">
+            <summary>Sets the stub of <see cref="M:SimpleBank.Repository.IAccountRepository.CreateAccount(SimpleBank.Domain.Account)"/>
+            </summary>
+        </member>
+        <member name="F:SimpleBank.Repository.Moles.SIAccountRepository.GetAccountInt32">
+            <summary>Sets the stub of <see cref="M:SimpleBank.Repository.IAccountRepository.GetAccount(System.Int32)"/>
+            </summary>
+        </member>
+        <member name="M:SimpleBank.Repository.Moles.SIAccountRepository.sb::SimpleBank#Repository#IAccountRepository#CreateAccount(SimpleBank.Domain.Account)">
+            <summary>Sets the stub of <see cref="M:SimpleBank.Repository.IAccountRepository.CreateAccount(SimpleBank.Domain.Account)"/>
+            </summary>
+        </member>
+        <member name="M:SimpleBank.Repository.Moles.SIAccountRepository.sb::SimpleBank#Repository#IAccountRepository#GetAccount(System.Int32)">
+            <summary>Sets the stub of <see cref="M:SimpleBank.Repository.IAccountRepository.GetAccount(System.Int32)"/>
+            </summary>
+        </member>
+        <member name="M:SimpleBank.Repository.Moles.SIAccountRepository.sb::SimpleBank#Repository#IAccountRepository#UpdateAccount(SimpleBank.Domain.Account)">
+            <summary>Sets the stub of <see cref="M:SimpleBank.Repository.IAccountRepository.UpdateAccount(SimpleBank.Domain.Account)"/>
+            </summary>
+        </member>
+        <member name="F:SimpleBank.Repository.Moles.SIAccountRepository.UpdateAccountAccount">
+            <summary>Sets the stub of <see cref="M:SimpleBank.Repository.IAccountRepository.UpdateAccount(SimpleBank.Domain.Account)"/>
+            </summary>
+        </member>
+        <member name="T:SimpleBank.Repository.Moles.SIOperationRepository">
+            <summary>Stub type of <see cref="T:SimpleBank.Repository.IOperationRepository"/>
+            .</summary>
+        </member>
+        <member name="M:SimpleBank.Repository.Moles.SIOperationRepository.#ctor">
+            <summary>Initializes a new instance of type SIOperationRepository</summary>
+        </member>
+        <member name="F:SimpleBank.Repository.Moles.SIOperationRepository.CreateOperationOperation">
+            <summary>Sets the stub of <see cref="M:SimpleBank.Repository.IOperationRepository.CreateOperation(SimpleBank.Domain.Operation)"/>
+            </summary>
+        </member>
+        <member name="M:SimpleBank.Repository.Moles.SIOperationRepository.sb::SimpleBank#Repository#IOperationRepository#CreateOperation(SimpleBank.Domain.Operation)">
+            <summary>Sets the stub of <see cref="M:SimpleBank.Repository.IOperationRepository.CreateOperation(SimpleBank.Domain.Operation)"/>
+            </summary>
+        </member>
+        <member name="T:SimpleBank.Domain.Moles.SOperation">
+            <summary>Stub type of <see cref="T:SimpleBank.Domain.Operation"/>
+            .</summary>
+        </member>
+        <member name="M:SimpleBank.Domain.Moles.SOperation.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:SimpleBank.Domain.Moles.SOperation.InitializeStub">
+            <summary>Initializes a new instance of type SOperation</summary>
+        </member>
+        <member name="P:SimpleBank.Domain.Moles.SOperation.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:SimpleBank.Domain.Moles.SOperation.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+    </members>
+</doc>
