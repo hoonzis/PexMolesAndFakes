@@ -1,0 +1,290 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>SimpleBank.Fakes</name>
+    </assembly>
+    <members>
+        <member name="T:SimpleBank.Domain.Fakes.ShimAccount">
+            <summary>Shim type of SimpleBank.Domain.Account</summary>
+        </member>
+        <member name="M:SimpleBank.Domain.Fakes.ShimAccount.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:SimpleBank.Domain.Fakes.ShimAccount.#ctor(SimpleBank.Domain.Account)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:SimpleBank.Domain.Fakes.ShimAccount.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:SimpleBank.Domain.Fakes.ShimAccount.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:SimpleBank.Domain.Fakes.ShimAccount.AutorizeOverdraftGet">
+            <summary>Sets the shim of Account.get_AutorizeOverdraft()</summary>
+        </member>
+        <member name="P:SimpleBank.Domain.Fakes.ShimAccount.AutorizeOverdraftSetBoolean">
+            <summary>Sets the shim of Account.set_AutorizeOverdraft(Boolean value)</summary>
+        </member>
+        <member name="P:SimpleBank.Domain.Fakes.ShimAccount.BalanceGet">
+            <summary>Sets the shim of Account.get_Balance()</summary>
+        </member>
+        <member name="P:SimpleBank.Domain.Fakes.ShimAccount.BalanceSetDecimal">
+            <summary>Sets the shim of Account.set_Balance(Decimal value)</summary>
+        </member>
+        <member name="P:SimpleBank.Domain.Fakes.ShimAccount.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:SimpleBank.Domain.Fakes.ShimAccount.Constructor">
+            <summary>Sets the shim of Account.Account()</summary>
+        </member>
+        <member name="P:SimpleBank.Domain.Fakes.ShimAccount.IdGet">
+            <summary>Sets the shim of Account.get_Id()</summary>
+        </member>
+        <member name="P:SimpleBank.Domain.Fakes.ShimAccount.IdSetInt32">
+            <summary>Sets the shim of Account.set_Id(Int32 value)</summary>
+        </member>
+        <member name="P:SimpleBank.Domain.Fakes.ShimAccount.OperationsGet">
+            <summary>Sets the shim of Account.get_Operations()</summary>
+        </member>
+        <member name="P:SimpleBank.Domain.Fakes.ShimAccount.OperationsSetIListOfOperation">
+            <summary>Sets the shim of Account.set_Operations(IList`1&lt;Operation&gt; value)</summary>
+        </member>
+        <member name="T:SimpleBank.Domain.Fakes.ShimAccount.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:SimpleBank.Domain.Fakes.ShimAccount.AllInstances.AutorizeOverdraftGet">
+            <summary>Sets the shim of Account.get_AutorizeOverdraft()</summary>
+        </member>
+        <member name="P:SimpleBank.Domain.Fakes.ShimAccount.AllInstances.AutorizeOverdraftSetBoolean">
+            <summary>Sets the shim of Account.set_AutorizeOverdraft(Boolean value)</summary>
+        </member>
+        <member name="P:SimpleBank.Domain.Fakes.ShimAccount.AllInstances.BalanceGet">
+            <summary>Sets the shim of Account.get_Balance()</summary>
+        </member>
+        <member name="P:SimpleBank.Domain.Fakes.ShimAccount.AllInstances.BalanceSetDecimal">
+            <summary>Sets the shim of Account.set_Balance(Decimal value)</summary>
+        </member>
+        <member name="P:SimpleBank.Domain.Fakes.ShimAccount.AllInstances.IdGet">
+            <summary>Sets the shim of Account.get_Id()</summary>
+        </member>
+        <member name="P:SimpleBank.Domain.Fakes.ShimAccount.AllInstances.IdSetInt32">
+            <summary>Sets the shim of Account.set_Id(Int32 value)</summary>
+        </member>
+        <member name="P:SimpleBank.Domain.Fakes.ShimAccount.AllInstances.OperationsGet">
+            <summary>Sets the shim of Account.get_Operations()</summary>
+        </member>
+        <member name="P:SimpleBank.Domain.Fakes.ShimAccount.AllInstances.OperationsSetIListOfOperation">
+            <summary>Sets the shim of Account.set_Operations(IList`1&lt;Operation&gt; value)</summary>
+        </member>
+        <member name="T:SimpleBank.Domain.Fakes.ShimOperation">
+            <summary>Shim type of SimpleBank.Domain.Operation</summary>
+        </member>
+        <member name="M:SimpleBank.Domain.Fakes.ShimOperation.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:SimpleBank.Domain.Fakes.ShimOperation.#ctor(SimpleBank.Domain.Operation)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:SimpleBank.Domain.Fakes.ShimOperation.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:SimpleBank.Domain.Fakes.ShimOperation.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:SimpleBank.Domain.Fakes.ShimOperation.AmountGet">
+            <summary>Sets the shim of Operation.get_Amount()</summary>
+        </member>
+        <member name="P:SimpleBank.Domain.Fakes.ShimOperation.AmountSetDecimal">
+            <summary>Sets the shim of Operation.set_Amount(Decimal value)</summary>
+        </member>
+        <member name="P:SimpleBank.Domain.Fakes.ShimOperation.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:SimpleBank.Domain.Fakes.ShimOperation.Constructor">
+            <summary>Sets the shim of Operation.Operation()</summary>
+        </member>
+        <member name="P:SimpleBank.Domain.Fakes.ShimOperation.DirectionGet">
+            <summary>Sets the shim of Operation.get_Direction()</summary>
+        </member>
+        <member name="P:SimpleBank.Domain.Fakes.ShimOperation.DirectionSetDirection">
+            <summary>Sets the shim of Operation.set_Direction(Direction value)</summary>
+        </member>
+        <member name="T:SimpleBank.Domain.Fakes.ShimOperation.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:SimpleBank.Domain.Fakes.ShimOperation.AllInstances.AmountGet">
+            <summary>Sets the shim of Operation.get_Amount()</summary>
+        </member>
+        <member name="P:SimpleBank.Domain.Fakes.ShimOperation.AllInstances.AmountSetDecimal">
+            <summary>Sets the shim of Operation.set_Amount(Decimal value)</summary>
+        </member>
+        <member name="P:SimpleBank.Domain.Fakes.ShimOperation.AllInstances.DirectionGet">
+            <summary>Sets the shim of Operation.get_Direction()</summary>
+        </member>
+        <member name="P:SimpleBank.Domain.Fakes.ShimOperation.AllInstances.DirectionSetDirection">
+            <summary>Sets the shim of Operation.set_Direction(Direction value)</summary>
+        </member>
+        <member name="T:SimpleBank.Domain.Fakes.StubAccount">
+            <summary>Stub type of SimpleBank.Domain.Account</summary>
+        </member>
+        <member name="M:SimpleBank.Domain.Fakes.StubAccount.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:SimpleBank.Domain.Fakes.StubAccount.InitializeStub">
+            <summary>Initializes a new instance of type StubAccount</summary>
+        </member>
+        <member name="P:SimpleBank.Domain.Fakes.StubAccount.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:SimpleBank.Domain.Fakes.StubAccount.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:SimpleBank.Domain.Fakes.StubAccount.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:SimpleBank.Domain.Fakes.StubOperation">
+            <summary>Stub type of SimpleBank.Domain.Operation</summary>
+        </member>
+        <member name="M:SimpleBank.Domain.Fakes.StubOperation.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:SimpleBank.Domain.Fakes.StubOperation.InitializeStub">
+            <summary>Initializes a new instance of type StubOperation</summary>
+        </member>
+        <member name="P:SimpleBank.Domain.Fakes.StubOperation.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:SimpleBank.Domain.Fakes.StubOperation.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:SimpleBank.Domain.Fakes.StubOperation.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:SimpleBank.Fakes.ShimAccountService">
+            <summary>Shim type of SimpleBank.AccountService</summary>
+        </member>
+        <member name="M:SimpleBank.Fakes.ShimAccountService.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:SimpleBank.Fakes.ShimAccountService.#ctor(SimpleBank.AccountService)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:SimpleBank.Fakes.ShimAccountService.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:SimpleBank.Fakes.ShimAccountService.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:SimpleBank.Fakes.ShimAccountService.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:SimpleBank.Fakes.ShimAccountService.ComputeInterestAccountDoubleInt32">
+            <summary>Sets the shim of AccountService.ComputeInterest(Account account, Double annualRate, Int32 months)</summary>
+        </member>
+        <member name="P:SimpleBank.Fakes.ShimAccountService.ConstructorIAccountRepositoryIOperationRepository">
+            <summary>Sets the shim of AccountService.AccountService(IAccountRepository accountRepository, IOperationRepository operationRepository)</summary>
+        </member>
+        <member name="P:SimpleBank.Fakes.ShimAccountService.GetOperationsForAccountInt32">
+            <summary>Sets the shim of AccountService.GetOperationsForAccount(Int32 accountID)</summary>
+        </member>
+        <member name="P:SimpleBank.Fakes.ShimAccountService.MakeTransferAccountAccountDecimal">
+            <summary>Sets the shim of AccountService.MakeTransfer(Account creditAccount, Account debitAccount, Decimal amount)</summary>
+        </member>
+        <member name="T:SimpleBank.Fakes.ShimAccountService.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:SimpleBank.Fakes.ShimAccountService.AllInstances.ComputeInterestAccountDoubleInt32">
+            <summary>Sets the shim of AccountService.ComputeInterest(Account account, Double annualRate, Int32 months)</summary>
+        </member>
+        <member name="P:SimpleBank.Fakes.ShimAccountService.AllInstances.GetOperationsForAccountInt32">
+            <summary>Sets the shim of AccountService.GetOperationsForAccount(Int32 accountID)</summary>
+        </member>
+        <member name="P:SimpleBank.Fakes.ShimAccountService.AllInstances.MakeTransferAccountAccountDecimal">
+            <summary>Sets the shim of AccountService.MakeTransfer(Account creditAccount, Account debitAccount, Decimal amount)</summary>
+        </member>
+        <member name="T:SimpleBank.Fakes.ShimUtils">
+            <summary>Shim type of SimpleBank.Utils</summary>
+        </member>
+        <member name="M:SimpleBank.Fakes.ShimUtils.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:SimpleBank.Fakes.ShimUtils.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:SimpleBank.Fakes.ShimUtils.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:SimpleBank.Fakes.ShimUtils.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:SimpleBank.Fakes.ShimUtils.Capitalize">
+            <summary>Sets the shim of Utils.Capitalize()</summary>
+        </member>
+        <member name="P:SimpleBank.Fakes.ShimUtils.FibonacciInt32">
+            <summary>Sets the shim of Utils.Fibonacci(Int32 x)</summary>
+        </member>
+        <member name="P:SimpleBank.Fakes.ShimUtils.GetMessage">
+            <summary>Sets the shim of Utils.GetMessage()</summary>
+        </member>
+        <member name="P:SimpleBank.Fakes.ShimUtils.ReadFooValue">
+            <summary>Sets the shim of Utils.ReadFooValue()</summary>
+        </member>
+        <member name="P:SimpleBank.Fakes.ShimUtils.SomeDumbMethodInt32Int32">
+            <summary>Sets the shim of Utils.SomeDumbMethod(Int32 i, Int32 j)</summary>
+        </member>
+        <member name="T:SimpleBank.Fakes.StubAccountService">
+            <summary>Stub type of SimpleBank.AccountService</summary>
+        </member>
+        <member name="M:SimpleBank.Fakes.StubAccountService.#ctor(SimpleBank.Repository.IAccountRepository,SimpleBank.Repository.IOperationRepository)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:SimpleBank.Fakes.StubAccountService.InitializeStub">
+            <summary>Initializes a new instance of type StubAccountService</summary>
+        </member>
+        <member name="P:SimpleBank.Fakes.StubAccountService.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:SimpleBank.Fakes.StubAccountService.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:SimpleBank.Fakes.StubAccountService.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:SimpleBank.Repository.Fakes.StubIAccountRepository">
+            <summary>Stub type of SimpleBank.Repository.IAccountRepository</summary>
+        </member>
+        <member name="M:SimpleBank.Repository.Fakes.StubIAccountRepository.#ctor">
+            <summary>Initializes a new instance of type StubIAccountRepository</summary>
+        </member>
+        <member name="F:SimpleBank.Repository.Fakes.StubIAccountRepository.CreateAccountAccount">
+            <summary>Sets the stub of IAccountRepository.CreateAccount(Account account)</summary>
+        </member>
+        <member name="F:SimpleBank.Repository.Fakes.StubIAccountRepository.GetAccountInt32">
+            <summary>Sets the stub of IAccountRepository.GetAccount(Int32 id)</summary>
+        </member>
+        <member name="M:SimpleBank.Repository.Fakes.StubIAccountRepository.sb::SimpleBank#Repository#IAccountRepository#CreateAccount(SimpleBank.Domain.Account)">
+            <summary>Sets the stub of IAccountRepository.CreateAccount(Account account)</summary>
+        </member>
+        <member name="M:SimpleBank.Repository.Fakes.StubIAccountRepository.sb::SimpleBank#Repository#IAccountRepository#GetAccount(System.Int32)">
+            <summary>Sets the stub of IAccountRepository.GetAccount(Int32 id)</summary>
+        </member>
+        <member name="M:SimpleBank.Repository.Fakes.StubIAccountRepository.sb::SimpleBank#Repository#IAccountRepository#UpdateAccount(SimpleBank.Domain.Account)">
+            <summary>Sets the stub of IAccountRepository.UpdateAccount(Account account)</summary>
+        </member>
+        <member name="F:SimpleBank.Repository.Fakes.StubIAccountRepository.UpdateAccountAccount">
+            <summary>Sets the stub of IAccountRepository.UpdateAccount(Account account)</summary>
+        </member>
+        <member name="T:SimpleBank.Repository.Fakes.StubIOperationRepository">
+            <summary>Stub type of SimpleBank.Repository.IOperationRepository</summary>
+        </member>
+        <member name="M:SimpleBank.Repository.Fakes.StubIOperationRepository.#ctor">
+            <summary>Initializes a new instance of type StubIOperationRepository</summary>
+        </member>
+        <member name="F:SimpleBank.Repository.Fakes.StubIOperationRepository.CreateOperationOperation">
+            <summary>Sets the stub of IOperationRepository.CreateOperation(Operation o)</summary>
+        </member>
+        <member name="M:SimpleBank.Repository.Fakes.StubIOperationRepository.sb::SimpleBank#Repository#IOperationRepository#CreateOperation(SimpleBank.Domain.Operation)">
+            <summary>Sets the stub of IOperationRepository.CreateOperation(Operation o)</summary>
+        </member>
+    </members>
+</doc>

@@ -9,14 +9,20 @@ using SimpleBank;
 using Microsoft.Pex.Framework.Generated;
 //using System.Moles;
 using System.Fakes;
+using Microsoft.QualityTools.Testing.Fakes;
 
 //[assembly: MoledType(typeof(System.IO.File))]
 namespace SimpleBank
 {
+    /// <summary>
+    /// Parametrized tests for Utils class. The test compile, but because Pex is not available for VS2012,
+    /// there is no way to test
+    /// </summary>
     [PexClass(typeof(Utils))]
     [TestClass]
     public partial class UtilsTest
     {
+       
         [PexMethod]
         public int Fibonacci(int x)
         {
@@ -25,23 +31,22 @@ namespace SimpleBank
             // TODO: add assertions to method UtilsTest.Fibonacci(Int32)
         }
 
-        /// <summary>Test stub for ReadFooValue()</summary>
+   
         [PexMethod]
         public string ReadFooValue()
         {
-            /*
-            MFile.ReadAllTextString = (x) =>
+            using(ShimsContext.Create()){
+            System.IO.Fakes.ShimFile.ReadAllTextString = (x) =>
             {
                 return "Hello World";
             };
 
-            MFile.ExistsString = (x) => true;
+            System.IO.Fakes.ShimFile.ExistsString = (x) => true;
 
             string result = Utils.ReadFooValue();
-            PexAssert.AreEqual(result, "Hello World");
-            return result;*/
-
-            return null;
+            
+            return result;
+            }
         }
 
         [PexMethod]
@@ -54,25 +59,26 @@ namespace SimpleBank
         [PexMethod]
         public string Capitalize(string parametr)
         {
-            /*
-            MFile.ReadAllTextString = (x) =>
+            using (ShimsContext.Create())
             {
-                return parametr;
-            };
+                System.IO.Fakes.ShimFile.ReadAllTextString = (x) =>
+                {
+                    return parametr;
+                };
 
-            MFile.ExistsString = (x) => true;
+                System.IO.Fakes.ShimFile.ExistsString = (x) => true;
 
-            string result = Utils.Capitalize();
-            return result;*/
-            // TODO: add assertions to method UtilsTest.Capitalize()
-            return null;
+                string result = Utils.Capitalize();
+                return result;
+                // TODO: add assertions to method UtilsTest.Capitalize()
+            }
         }
 
         [PexMethod]
         public string GetMessage(bool newyear)
         {
-            /*
-            using (ShimContext.Create())
+            
+            using (ShimsContext.Create())
             {
                 System.Fakes.ShimDateTime.NowGet =
                     () =>
@@ -83,7 +89,7 @@ namespace SimpleBank
                         }
                         return new DateTime(2, 2, 2);
                     };
-            }*/
+            }
             
             string result = Utils.GetMessage();
             return result;
