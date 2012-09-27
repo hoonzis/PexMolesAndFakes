@@ -12,16 +12,15 @@ namespace SimpleBank.Tests
     {
 
         [TestMethod]
-        public int Fibonacci(int x)
+        public void TestFibonacci()
         {
-            int result = Utils.Fibonacci(x);
-            return result;
-            // TODO: add assertions to method UtilsTest.Fibonacci(Int32)
+            int result = Utils.Fibonacci(3);
+            Assert.AreEqual(result,9);
         }
 
 
-         [TestMethod]
-        public string ReadFooValue()
+        [TestMethod]
+        public void TestReadFooValue()
         {
             using (ShimsContext.Create())
             {
@@ -34,37 +33,37 @@ namespace SimpleBank.Tests
 
                 string result = Utils.ReadFooValue();
 
-                return result;
+                Assert.AreEqual(result, "Hello World");
             }
         }
 
-         [TestMethod]
-        public string SomeDumpMethod(int i, int j)
+        [TestMethod]
+        public void SomeDumpMethod(int i, int j)
         {
             string result = Utils.SomeDumbMethod(i, j);
-            return result;
+            Assert.AreEqual(result, "test");
 
         }
-         [TestMethod]
-        public string Capitalize(string parametr)
+        
+        [TestMethod]
+        public void Capitalize()
         {
             using (ShimsContext.Create())
             {
                 System.IO.Fakes.ShimFile.ReadAllTextString = (x) =>
                 {
-                    return parametr;
+                    return "some text";
                 };
 
                 System.IO.Fakes.ShimFile.ExistsString = (x) => true;
 
                 string result = Utils.Capitalize();
-                return result;
-                // TODO: add assertions to method UtilsTest.Capitalize()
+                Assert.AreEqual(result, "SomeText");
             }
         }
 
         [TestMethod]
-        public string GetMessage(bool newyear)
+        public void GetMessage()
         {
 
             using (ShimsContext.Create())
@@ -72,16 +71,12 @@ namespace SimpleBank.Tests
                 System.Fakes.ShimDateTime.NowGet =
                     () =>
                     {
-                        if (newyear)
-                        {
-                            return new DateTime(1, 1, 1);
-                        }
-                        return new DateTime(2, 2, 2);
+                        return new DateTime(1, 1, 1);   
                     };
             }
 
             string result = Utils.GetMessage();
-            return result;
+            Assert.AreEqual(result, "Happy New Year");   
         }
     }
 }

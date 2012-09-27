@@ -29,10 +29,7 @@ namespace SimpleBank.Tests
         [TestMethod]
         public void TestMakeTransfer_debit()
         {
-
-            StubIAccountRepository accountRepository = new StubIAccountRepository();
-            StubIOperationRepository operationRepository = new StubIOperationRepository();
-            AccountService service = new AccountService(accountRepository, operationRepository);
+            AccountService service = new AccountService(null, null);
             service.MakeTransfer(_accounts[0], _accounts[1], 200);
         }
 
