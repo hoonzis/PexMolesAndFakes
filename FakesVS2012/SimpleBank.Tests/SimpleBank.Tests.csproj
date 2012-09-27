@@ -72,35 +72,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AccountServiceManualTests.cs" />
-    <Compile Include="AccountServiceTest.ComputeInterest.g.cs">
-      <DependentUpon>AccountServicePexTests.cs</DependentUpon>
-    </Compile>
     <Compile Include="AccountServicePexTests.cs" />
-    <Compile Include="AccountServiceTest.GetOperationsForAccount.g.cs">
-      <DependentUpon>AccountServicePexTests.cs</DependentUpon>
-    </Compile>
-    <Compile Include="AccountServiceTest.MakeTransfer.g.cs">
-      <DependentUpon>AccountServicePexTests.cs</DependentUpon>
-    </Compile>
     <Compile Include="Factories\AccountFactory.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\PexAssemblyInfo.cs" />
-    <Compile Include="UtilsTest.Capitalize.g.cs">
-      <DependentUpon>UtilsPexTests.cs</DependentUpon>
-    </Compile>
+    <Compile Include="UtilsManualTests.cs" />
     <Compile Include="UtilsPexTests.cs" />
-    <Compile Include="UtilsTest.Fibonacci.g.cs">
-      <DependentUpon>UtilsPexTests.cs</DependentUpon>
-    </Compile>
-    <Compile Include="UtilsTest.GetMessage.g.cs">
-      <DependentUpon>UtilsPexTests.cs</DependentUpon>
-    </Compile>
-    <Compile Include="UtilsTest.ReadFooValue.g.cs">
-      <DependentUpon>UtilsPexTests.cs</DependentUpon>
-    </Compile>
-    <Compile Include="UtilsTest.SomeDumpMethod.g.cs">
-      <DependentUpon>UtilsPexTests.cs</DependentUpon>
-    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Fakes Include="Fakes\System.fakes" />
