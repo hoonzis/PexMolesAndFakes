@@ -1,15 +1,15 @@
 ﻿using System;
+using System.Text;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using SimpleBank.Domain;
-using SimpleBank.Repository.Fakes;
+using SimpleBank.Repository.Moles;
 
 namespace SimpleBank.Tests
 {
     [TestClass]
-    public class AccountServiceManualTests
+    public class AccountServiceManualTest
     {
         private List<Account> _accounts = new List<Account>();
 
@@ -32,13 +32,13 @@ namespace SimpleBank.Tests
         {
             var operationsList = new List<Operation>();
 
-            StubIOperationRepository opRepository = new StubIOperationRepository();
+            SIOperationRepository opRepository = new SIOperationRepository();
             opRepository.CreateOperationOperation = (x) =>
             {
                 operationsList.Add(x);
             };
 
-            StubIAccountRepository acRepository = new StubIAccountRepository();
+            SIAccountRepository acRepository = new SIAccountRepository();
             acRepository.UpdateAccountAccount = (x) =>
             {
                 var acc1 = _accounts.SingleOrDefault(y => y.Id == x.Id);
@@ -67,17 +67,18 @@ namespace SimpleBank.Tests
         [TestMethod]
         public void GetOperationsForAccount_AccountFound()
         {
-            StubIAccountRepository accountRepository = new StubIAccountRepository();
+            SIAccountRepository accountRepository = new SIAccountRepository();
             accountRepository.GetAccountInt32 = (x) =>
             {
                 return _accounts.SingleOrDefault(a => a.Id == x);
             };
 
-            StubIOperationRepository operationRepository = new StubIOperationRepository();
+            SIOperationRepository operationRepository = new SIOperationRepository();
             AccountService service = new AccountService(accountRepository, operationRepository);
 
             List<Operation> result = service.GetOperationsForAccount(1);
             Assert.AreEqual(result.Count, 2);
         }
     }
+    
 }

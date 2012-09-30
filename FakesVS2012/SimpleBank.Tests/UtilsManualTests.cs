@@ -14,8 +14,8 @@ namespace SimpleBank.Tests
         [TestMethod]
         public void TestFibonacci()
         {
-            int result = Utils.Fibonacci(3);
-            Assert.AreEqual(result,9);
+            int result = Utils.Fibonacci(4);
+            Assert.AreEqual(result,5);
         }
 
 
@@ -38,11 +38,10 @@ namespace SimpleBank.Tests
         }
 
         [TestMethod]
-        public void SomeDumpMethod(int i, int j)
+        public void SomeDumpMethod()
         {
-            string result = Utils.SomeDumbMethod(i, j);
+            string result = Utils.SomeDumbMethod(1, 2);
             Assert.AreEqual(result, "test");
-
         }
         
         [TestMethod]
@@ -71,12 +70,13 @@ namespace SimpleBank.Tests
                 System.Fakes.ShimDateTime.NowGet =
                     () =>
                     {
-                        return new DateTime(1, 1, 1);   
+                        return new DateTime(1, 1, 1);
                     };
-            }
 
-            string result = Utils.GetMessage();
-            Assert.AreEqual(result, "Happy New Year");   
+
+                string result = Utils.GetMessage();
+                Assert.AreEqual(result, "Happy New Year!");
+            }
         }
     }
 }
